@@ -1,2 +1,10 @@
 # mod_for_StS2
-A mod for the game Slay the Spire 2
+为游戏《杀戮尖塔2》制作的mod
+# mod设计
+参考xx文档
+# 美术资源
+参考xx文档
+# 代码标准
+参考xx文档
+# （待定）音乐及音效资源
+参考xx文档
