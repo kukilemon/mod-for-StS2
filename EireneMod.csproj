@@ -1,0 +1,45 @@
+<Project Sdk="Godot.NET.Sdk/4.5.1">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <LangVersion>13.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>EireneMod</AssemblyName>
+    <RootNamespace>EireneMod</RootNamespace>
+    <GameDir Condition="'$(GameDir)' == ''">D:\steam\steamapps\common\Slay the Spire 2</GameDir>
+    <GameAssemblyDir>$(GameDir)\data_sts2_windows_x86_64</GameAssemblyDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove=".godot/**/*.cs" />
+    <Compile Remove="obj/**/*.cs" />
+    <None Remove=".godot/**/*" />
+    <None Remove="obj/**/*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="sts2">
+      <HintPath>$(GameAssemblyDir)\sts2.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(GameAssemblyDir)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="GodotSharp">
+      <HintPath>$(GameAssemblyDir)\GodotSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="CopyModOutput" AfterTargets="Build">
+    <ItemGroup>
+      <ModOutput Include="$(TargetPath)" />
+      <ModOutput Include="$(TargetDir)$(AssemblyName).pdb" Condition="Exists('$(TargetDir)$(AssemblyName).pdb')" />
+    </ItemGroup>
+    <MakeDir Directories="$(MSBuildProjectDirectory)\build" />
+    <Copy SourceFiles="@(ModOutput)" DestinationFolder="$(MSBuildProjectDirectory)\build" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\manifest\EireneMod.json" DestinationFolder="$(MSBuildProjectDirectory)\build" />
+  </Target>
+</Project>

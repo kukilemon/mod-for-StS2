@@ -1,0 +1,7 @@
+bin/
+obj/
+build/*.dll
+build/*.pdb
+build/*.pck
+.godot/
+.idea/

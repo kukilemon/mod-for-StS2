@@ -1,0 +1,6 @@
+{
+  "CHURCH_RAPIER.title": "教会刺剑",
+  "CHURCH_RAPIER.description": "攻击敌人时施加失衡；命中浮空敌人时获得连击。",
+  "CHURCH_RAPIER.flavor": "银白剑身映照着未熄的灯火。",
+  "CHURCH_RAPIER.smartDescription": "每当你使用攻击牌命中敌人，给予其1层失衡。每命中一次拥有浮空的敌人，获得1层连击。"
+}
