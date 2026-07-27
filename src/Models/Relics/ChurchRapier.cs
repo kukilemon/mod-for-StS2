@@ -1,5 +1,5 @@
-using EireneMod.Commands;
-using EireneMod.Models.Powers;
+using IreneMod.Commands;
+using IreneMod.Models.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace EireneMod.Models.Relics;
+namespace IreneMod.Models.Relics;
 
 public sealed class ChurchRapier : RelicModel
 {
@@ -78,7 +78,7 @@ public sealed class ChurchRapier : RelicModel
 
         foreach (var target in _targetsHitByCurrentAttack.Where(target => target.IsAlive))
         {
-            await EirenePowerCmd.ApplyImbalance(
+            await IrenePowerCmd.ApplyImbalance(
                 choiceContext,
                 target,
                 1,

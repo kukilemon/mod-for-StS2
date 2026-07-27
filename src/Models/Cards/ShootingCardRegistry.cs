@@ -1,6 +1,6 @@
 using MegaCrit.Sts2.Core.Models;
 
-namespace EireneMod.Models.Cards;
+namespace IreneMod.Models.Cards;
 
 public static class ShootingCardRegistry
 {

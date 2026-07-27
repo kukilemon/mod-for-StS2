@@ -1,11 +1,11 @@
-using EireneMod.Models.Cards;
+using IreneMod.Models.Cards;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace EireneMod.Patches;
+namespace IreneMod.Patches;
 
 [HarmonyPatch(typeof(IntangiblePower), nameof(IntangiblePower.ModifyDamageCap))]
 public static class ShootingIgnoresIntangibleDamageCapPatch

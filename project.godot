@@ -10,12 +10,12 @@ config_version=5
 
 [application]
 
-config/name="EireneMod"
+config/name="IreneMod"
 config/features=PackedStringArray("4.5", "C#", "GL Compatibility")
 
 [dotnet]
 
-project/assembly_name="EireneMod"
+project/assembly_name="IreneMod"
 
 [rendering]
 

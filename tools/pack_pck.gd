@@ -1,20 +1,20 @@
 extends SceneTree
 
 const RAW_FILES := [
-	"EireneMod/localization/zhs/cards.json",
-	"EireneMod/localization/zhs/characters.json",
-	"EireneMod/localization/zhs/powers.json",
-	"EireneMod/localization/zhs/relics.json",
-	"scenes/creature_visuals/eirene.tscn",
-	"scenes/ui/character_icons/eirene_icon.tscn",
-	"scenes/combat/energy_counters/eirene_energy_counter.tscn",
-	"scenes/merchant/characters/eirene_merchant.tscn",
-	"scenes/rest_site/characters/eirene_rest_site.tscn",
-	"scenes/vfx/card_trail_eirene.tscn",
-	"scenes/screens/char_select/char_select_bg_eirene.tscn",
-	"materials/transitions/eirene_transition_mat.tres",
-	"images/atlases/card_atlas.sprites/ironclad/eirene_strike.tres",
-	"images/atlases/card_atlas.sprites/ironclad/eirene_defend.tres",
+	"IreneMod/localization/zhs/cards.json",
+	"IreneMod/localization/zhs/characters.json",
+	"IreneMod/localization/zhs/powers.json",
+	"IreneMod/localization/zhs/relics.json",
+	"scenes/creature_visuals/irene.tscn",
+	"scenes/ui/character_icons/irene_icon.tscn",
+	"scenes/combat/energy_counters/irene_energy_counter.tscn",
+	"scenes/merchant/characters/irene_merchant.tscn",
+	"scenes/rest_site/characters/irene_rest_site.tscn",
+	"scenes/vfx/card_trail_irene.tscn",
+	"scenes/screens/char_select/char_select_bg_irene.tscn",
+	"materials/transitions/irene_transition_mat.tres",
+	"images/atlases/card_atlas.sprites/ironclad/irene_strike.tres",
+	"images/atlases/card_atlas.sprites/ironclad/irene_defend.tres",
 	"images/atlases/card_atlas.sprites/ironclad/standard_lantern.tres",
 	"images/atlases/card_atlas.sprites/ironclad/open_fire.tres",
 	"images/atlases/card_atlas.sprites/ironclad/rapid_fire.tres",
@@ -79,7 +79,7 @@ const RAW_FILES := [
 	"images/atlases/card_atlas.sprites/ironclad/guard_the_flame.tres",
 	"images/atlases/card_atlas.sprites/ironclad/add_lamp_oil.tres",
 	"images/atlases/card_atlas.sprites/ironclad/evolution_ritual.tres",
-	"images/atlases/card_atlas.sprites/ironclad/eirene_metamorphosis.tres",
+	"images/atlases/card_atlas.sprites/ironclad/irene_metamorphosis.tres",
 	"images/atlases/card_atlas.sprites/ironclad/holy_light_baptism.tres",
 	"images/atlases/card_atlas.sprites/ironclad/brilliant_lantern.tres",
 	"images/atlases/card_atlas.sprites/ironclad/throw_flame.tres",
@@ -125,13 +125,23 @@ const RAW_FILES := [
 ]
 
 const IMPORTED_TEXTURES := [
-	"images/ui/top_panel/character_icon_eirene.png",
-	"images/ui/top_panel/character_icon_eirene_outline.png",
-	"images/packed/character_select/char_select_eirene.png",
-	"images/packed/character_select/char_select_eirene_locked.png",
-	"images/packed/map/icons/map_marker_eirene.png",
-	"images/packed/card_portraits/ironclad/eirene_strike.png",
-	"images/packed/card_portraits/ironclad/eirene_defend.png",
+	"images/creature_visuals/irene/combat/rig/base.png",
+	"images/creature_visuals/irene/combat/rig/rear_hair.png",
+	"images/creature_visuals/irene/combat/rig/ribbon_left.png",
+	"images/creature_visuals/irene/combat/rig/ribbon_right.png",
+	"images/creature_visuals/irene/combat/rig/torso.png",
+	"images/creature_visuals/irene/combat/rig/head.png",
+	"images/creature_visuals/irene/combat/rig/arm_left.png",
+	"images/creature_visuals/irene/combat/rig/arm_right.png",
+	"images/creature_visuals/irene/combat/rig/lantern.png",
+	"images/ui/top_panel/character_icon_irene.png",
+	"images/ui/top_panel/character_icon_irene_outline.png",
+	"images/packed/character_select/char_select_irene.png",
+	"images/packed/character_select/char_select_irene_locked.png",
+	"images/packed/character_select/character_select_irene_bg.png",
+	"images/packed/map/icons/map_marker_irene.png",
+	"images/packed/card_portraits/ironclad/irene_strike.png",
+	"images/packed/card_portraits/ironclad/irene_defend.png",
 	"images/packed/card_portraits/ironclad/standard_lantern.png",
 	"images/packed/card_portraits/ironclad/open_fire.png",
 	"images/packed/card_portraits/ironclad/rapid_fire.png",
@@ -196,7 +206,7 @@ const IMPORTED_TEXTURES := [
 	"images/packed/card_portraits/ironclad/guard_the_flame.png",
 	"images/packed/card_portraits/ironclad/add_lamp_oil.png",
 	"images/packed/card_portraits/ironclad/evolution_ritual.png",
-	"images/packed/card_portraits/ironclad/eirene_metamorphosis.png",
+	"images/packed/card_portraits/ironclad/irene_metamorphosis.png",
 	"images/packed/card_portraits/ironclad/holy_light_baptism.png",
 	"images/packed/card_portraits/ironclad/brilliant_lantern.png",
 	"images/packed/card_portraits/ironclad/throw_flame.png",
@@ -242,7 +252,7 @@ const IMPORTED_TEXTURES := [
 
 
 func _initialize() -> void:
-	var output_path := ProjectSettings.globalize_path("res://build/EireneMod.pck")
+	var output_path := ProjectSettings.globalize_path("res://build/IreneMod.pck")
 	var packer := PCKPacker.new()
 	var error := packer.pck_start(output_path)
 	if error != OK:

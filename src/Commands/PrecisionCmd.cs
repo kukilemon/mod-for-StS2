@@ -1,9 +1,9 @@
-using EireneMod.Models.Powers;
+using IreneMod.Models.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 
-namespace EireneMod.Commands;
+namespace IreneMod.Commands;
 
 public static class PrecisionCmd
 {

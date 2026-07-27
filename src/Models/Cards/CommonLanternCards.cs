@@ -1,5 +1,5 @@
-using EireneMod.Commands;
-using EireneMod.Models.Powers;
+using IreneMod.Commands;
+using IreneMod.Models.Powers;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace EireneMod.Models.Cards;
+namespace IreneMod.Models.Cards;
 
 public sealed class LightTheWay : CardModel
 {

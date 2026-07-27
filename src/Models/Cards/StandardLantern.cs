@@ -1,9 +1,9 @@
-using EireneMod.Commands;
+using IreneMod.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 
-namespace EireneMod.Models.Cards;
+namespace IreneMod.Models.Cards;
 
 public sealed class StandardLantern : CardModel
 {

@@ -1,5 +1,5 @@
-using EireneMod.Commands;
-using EireneMod.Models.Powers;
+using IreneMod.Commands;
+using IreneMod.Models.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace EireneMod.Models.Cards;
+namespace IreneMod.Models.Cards;
 
 public sealed class AdjustStance : CardModel
 {
@@ -43,7 +43,7 @@ public sealed class RisingThrust : CardModel, IRapierCard
     {
         ArgumentNullException.ThrowIfNull(play.Target);
         await RapierCmd.Single(context, this, play.Target, DynamicVars.Damage.BaseValue);
-        await EirenePowerCmd.ApplyImbalance(
+        await IrenePowerCmd.ApplyImbalance(
             context, play.Target, DynamicVars["ImbalancePower"].BaseValue, Owner.Creature, this);
     }
     protected override void OnUpgrade()

@@ -61,7 +61,7 @@ foreach ($requiredPath in @("project.godot", "images\atlases\card_atlas_1.png", 
 }
 
 $manifestDirectory = Join-Path $projectRoot ".godot"
-$manifestPath = Join-Path $manifestDirectory "eirene_dev_dependencies.json"
+$manifestPath = Join-Path $manifestDirectory "irene_dev_dependencies.json"
 $knownDependencies = [System.Collections.Generic.HashSet[string]]::new(
     [System.StringComparer]::OrdinalIgnoreCase
 )
@@ -185,8 +185,8 @@ if (Test-Path -LiteralPath $gitMarker) {
         $excludePath = $excludePath.Trim()
         [void](New-Item -ItemType Directory -Force -Path (Split-Path -Parent $excludePath))
         try {
-    $beginMarker = "# BEGIN Eirene local StS2 dependencies"
-    $endMarker = "# END Eirene local StS2 dependencies"
+    $beginMarker = "# BEGIN Irene local StS2 dependencies"
+    $endMarker = "# END Irene local StS2 dependencies"
     $existing = if (Test-Path -LiteralPath $excludePath) {
         Get-Content -Raw -LiteralPath $excludePath
     } else { "" }

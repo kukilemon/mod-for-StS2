@@ -4,7 +4,7 @@ using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 
-namespace EireneMod.Models.Powers;
+namespace IreneMod.Models.Powers;
 
 public sealed class LanternPower : PowerModel
 {

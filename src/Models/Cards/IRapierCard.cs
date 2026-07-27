@@ -1,4 +1,4 @@
-namespace EireneMod.Models.Cards;
+namespace IreneMod.Models.Cards;
 
-/// <summary>Marks an attack as a rapier attack for Eirene's combat mechanics.</summary>
+/// <summary>Marks an attack as a rapier attack for Irene's combat mechanics.</summary>
 public interface IRapierCard;

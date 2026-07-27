@@ -1,9 +1,9 @@
-using EireneMod.Models.Powers;
+using IreneMod.Models.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 
-namespace EireneMod.Commands;
+namespace IreneMod.Commands;
 
 public static class LanternCmd
 {
@@ -45,7 +45,7 @@ public static class LanternCmd
         var impact = owner.GetPower<FlameImpactPower>();
         if (impact is not null && owner.CombatState is not null)
             foreach (var enemy in owner.CombatState.HittableEnemies)
-                await EirenePowerCmd.ApplyImbalance(
+                await IrenePowerCmd.ApplyImbalance(
                     choiceContext, enemy, impact.Amount, owner, source);
 
         var progress = owner.GetPower<FinalFormProgressPower>();

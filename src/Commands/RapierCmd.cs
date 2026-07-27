@@ -1,5 +1,5 @@
-using EireneMod.Models.Cards;
-using EireneMod.Models.Powers;
+using IreneMod.Models.Cards;
+using IreneMod.Models.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 using HarmonyLib;
 
-namespace EireneMod.Commands;
+namespace IreneMod.Commands;
 
 public static class RapierCmd
 {
@@ -87,7 +87,7 @@ public static class RapierCmd
 
         // Floating Lock will be checked here once that debuff is implemented.
         await PowerCmd.Remove(imbalance);
-        await EirenePowerCmd.ApplyFloating(
+        await IrenePowerCmd.ApplyFloating(
             choiceContext, target, 2, card.Owner.Creature, card);
     }
 
@@ -128,7 +128,7 @@ public static class RapierCmd
 
         foreach (Creature target in targets.Where(target => target.IsAlive))
         {
-            await EirenePowerCmd.ApplyImbalance(
+            await IrenePowerCmd.ApplyImbalance(
                 context, target, power.Amount, card.Owner.Creature, card);
         }
         await PowerCmd.Remove(power);

@@ -1,0 +1,13 @@
+{
+  "IRENE.title": "艾丽妮",
+  "IRENE.description": "手持刺剑、提灯与手铳，在浮空、射击与灯火之间循环作战。",
+  "IRENE.titleObject": "艾丽妮",
+  "IRENE.pronounObject": "她",
+  "IRENE.possessiveAdjective": "她的",
+  "IRENE.pronounPossessive": "她的",
+  "IRENE.pronounSubject": "她",
+  "IRENE.cardsModifierTitle": "艾丽妮卡牌",
+  "IRENE.cardsModifierDescription": "艾丽妮的卡牌现在会出现在奖励和商店中。",
+  "IRENE.eventDeathPrevention": "灯火……还没有熄灭……",
+  "IRENE.unlockText": "已解锁。"
+}

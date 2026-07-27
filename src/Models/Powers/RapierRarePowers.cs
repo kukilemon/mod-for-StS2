@@ -1,12 +1,12 @@
-using EireneMod.Commands;
-using EireneMod.Models.Cards;
+using IreneMod.Commands;
+using IreneMod.Models.Cards;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 
-namespace EireneMod.Models.Powers;
+namespace IreneMod.Models.Powers;
 
 public sealed class SwordGunConcertoPower : PowerModel
 {

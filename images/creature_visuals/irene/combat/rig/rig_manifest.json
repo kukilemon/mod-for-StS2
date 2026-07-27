@@ -1,0 +1,171 @@
+{
+  "source": "images/creature_visuals/irene/combat/irene_v7_clean.png",
+  "canvas_size": [
+    1024,
+    1536
+  ],
+  "layers": [
+    {
+      "name": "base",
+      "texture": "images/creature_visuals/irene/combat/rig/base.png",
+      "pivot": [
+        512,
+        1400
+      ],
+      "center": [
+        519.0,
+        1100.5
+      ],
+      "bbox": [
+        290,
+        769,
+        748,
+        1432
+      ]
+    },
+    {
+      "name": "rear_hair",
+      "texture": "images/creature_visuals/irene/combat/rig/rear_hair.png",
+      "pivot": [
+        452,
+        345
+      ],
+      "center": [
+        405.5,
+        240.0
+      ],
+      "bbox": [
+        391,
+        198,
+        420,
+        282
+      ]
+    },
+    {
+      "name": "ribbon_left",
+      "texture": "images/creature_visuals/irene/combat/rig/ribbon_left.png",
+      "pivot": [
+        335,
+        650
+      ],
+      "center": [
+        268.0,
+        959.5
+      ],
+      "bbox": [
+        144,
+        630,
+        392,
+        1289
+      ]
+    },
+    {
+      "name": "ribbon_right",
+      "texture": "images/creature_visuals/irene/combat/rig/ribbon_right.png",
+      "pivot": [
+        690,
+        650
+      ],
+      "center": [
+        763.5,
+        1077.0
+      ],
+      "bbox": [
+        674,
+        919,
+        853,
+        1235
+      ]
+    },
+    {
+      "name": "head",
+      "texture": "images/creature_visuals/irene/combat/rig/head.png",
+      "pivot": [
+        510,
+        355
+      ],
+      "center": [
+        516.5,
+        194.5
+      ],
+      "bbox": [
+        419,
+        107,
+        614,
+        282
+      ]
+    },
+    {
+      "name": "arm_left",
+      "texture": "images/creature_visuals/irene/combat/rig/arm_left.png",
+      "pivot": [
+        382,
+        390
+      ],
+      "center": [
+        346.0,
+        670.5
+      ],
+      "bbox": [
+        242,
+        444,
+        450,
+        897
+      ]
+    },
+    {
+      "name": "arm_right",
+      "texture": "images/creature_visuals/irene/combat/rig/arm_right.png",
+      "pivot": [
+        625,
+        390
+      ],
+      "center": [
+        774.0,
+        859.5
+      ],
+      "bbox": [
+        688,
+        702,
+        860,
+        1017
+      ]
+    },
+    {
+      "name": "lantern",
+      "texture": "images/creature_visuals/irene/combat/rig/lantern.png",
+      "pivot": [
+        585,
+        675
+      ],
+      "center": [
+        610.5,
+        889.0
+      ],
+      "bbox": [
+        527,
+        769,
+        694,
+        1009
+      ]
+    },
+    {
+      "name": "torso",
+      "texture": "images/creature_visuals/irene/combat/rig/torso.png",
+      "pivot": [
+        510,
+        645
+      ],
+      "center": [
+        520.5,
+        525.5
+      ],
+      "bbox": [
+        322,
+        282,
+        719,
+        769
+      ]
+    }
+  ]
+}

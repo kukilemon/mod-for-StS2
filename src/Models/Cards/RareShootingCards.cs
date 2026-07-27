@@ -1,13 +1,13 @@
-using EireneMod.Commands;
-using EireneMod.Models.Powers;
+using IreneMod.Commands;
+using IreneMod.Models.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
-using EireneMod.Models.Relics;
+using IreneMod.Models.Relics;
 
-namespace EireneMod.Models.Cards;
+namespace IreneMod.Models.Cards;
 
 public sealed class WeaponModification : CardModel
 {

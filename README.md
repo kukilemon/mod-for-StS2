@@ -1,4 +1,4 @@
-# EireneMod
+# IreneMod
 
 《杀戮尖塔 2》自定义角色 Mod。
 
@@ -35,7 +35,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\initialize-dev.ps1 `
 
 1. 检查反编译工程中是否存在必要的项目文件和本体图集。
 2. 从当前 Mod 的 `res://` 引用开始，递归复制缺失的本体依赖。
-3. 将复制的文件记录在 `.godot/eirene_dev_dependencies.json`。
+3. 将复制的文件记录在 `.godot/irene_dev_dependencies.json`。
 4. 将这些文件加入本仓库本地的 `.git/info/exclude`，防止误提交游戏资源。
 
 完成后，使用 StS2 对应版本的 MegaDot 打开本仓库目录，并等待资源首次导入完成。
@@ -52,7 +52,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\initialize-dev.ps1 `
 
 ## 编译 DLL
 
-`EireneMod.csproj` 需要读取游戏安装目录中的以下程序集：
+`IreneMod.csproj` 需要读取游戏安装目录中的以下程序集：
 
 - `sts2.dll`
 - `0Harmony.dll`
@@ -67,9 +67,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\initialize-dev.ps1 `
 在仓库根目录依次运行：
 
 ```powershell
-dotnet restore .\EireneMod.csproj
+dotnet restore .\IreneMod.csproj
 
-dotnet build .\EireneMod.csproj `
+dotnet build .\IreneMod.csproj `
     --configuration Release `
     -p:GameDir="D:\steam\steamapps\common\Slay the Spire 2"
 ```
@@ -80,14 +80,14 @@ dotnet build .\EireneMod.csproj `
 
 ```text
 build/
-├── EireneMod.dll
-├── EireneMod.pdb
-└── EireneMod.json
+├── IreneMod.dll
+├── IreneMod.pdb
+└── IreneMod.json
 ```
 
-其中 `EireneMod.pdb` 只用于调试。发布时必须包含 DLL 和 manifest JSON。
+其中 `IreneMod.pdb` 只用于调试。发布时必须包含 DLL 和 manifest JSON。
 
-如果 Rider 已经正确使用仓库中的 .NET SDK，也可以打开 `EireneMod.csproj` 后选择 `Release` 配置进行构建。首次构建前仍需确保 `GameDir` 指向正确的游戏安装位置；命令行参数不会永久修改项目文件。
+如果 Rider 已经正确使用仓库中的 .NET SDK，也可以打开 `IreneMod.csproj` 后选择 `Release` 配置进行构建。首次构建前仍需确保 `GameDir` 指向正确的游戏安装位置；命令行参数不会永久修改项目文件。
 
 ## 打包 PCK
 
@@ -101,15 +101,15 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\pack-pck.ps1 `
 将 `MegaDotPath` 替换为开发者自己的 MegaDot 控制台程序路径。打包成功后会生成：
 
 ```text
-build/EireneMod.pck
+build/IreneMod.pck
 ```
 
 最终 `build` 目录中用于加载 Mod 的主要文件为：
 
 ```text
-EireneMod.dll
-EireneMod.json
-EireneMod.pck
+IreneMod.dll
+IreneMod.json
+IreneMod.pck
 ```
 
 推荐的完整构建顺序是：

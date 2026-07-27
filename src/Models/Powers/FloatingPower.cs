@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace EireneMod.Models.Powers;
+namespace IreneMod.Models.Powers;
 
 public sealed class FloatingPower : PowerModel
 {

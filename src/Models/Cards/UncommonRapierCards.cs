@@ -1,5 +1,5 @@
-using EireneMod.Commands;
-using EireneMod.Models.Powers;
+using IreneMod.Commands;
+using IreneMod.Models.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace EireneMod.Models.Cards;
+namespace IreneMod.Models.Cards;
 
 public sealed class AerialIntercept : CardModel, IRapierCard
 {
@@ -47,7 +47,7 @@ public sealed class Launch : CardModel
     protected override async Task OnPlay(PlayerChoiceContext context, CardPlay play)
     {
         ArgumentNullException.ThrowIfNull(play.Target);
-        await EirenePowerCmd.ApplyFloating(context, play.Target,
+        await IrenePowerCmd.ApplyFloating(context, play.Target,
             DynamicVars["FloatingPower"].BaseValue, Owner.Creature, this);
     }
     protected override void OnUpgrade() => EnergyCost.UpgradeBy(-1);

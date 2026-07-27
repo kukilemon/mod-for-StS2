@@ -1,5 +1,5 @@
-using EireneMod.Commands;
-using EireneMod.Models.Powers;
+using IreneMod.Commands;
+using IreneMod.Models.Powers;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace EireneMod.Models.Cards;
+namespace IreneMod.Models.Cards;
 
 public sealed class RecycleEmbers : CardModel
 {
@@ -132,10 +132,10 @@ public sealed class EvolutionRitual : CardModel
     protected override void OnUpgrade() => DynamicVars.Block.UpgradeValueBy(4m);
 }
 
-public sealed class EireneMetamorphosis : CardModel
+public sealed class IreneMetamorphosis : CardModel
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<IntangiblePower>(1m)];
-    public EireneMetamorphosis() : base(2, CardType.Power, CardRarity.Uncommon, TargetType.Self) { }
+    public IreneMetamorphosis() : base(2, CardType.Power, CardRarity.Uncommon, TargetType.Self) { }
     protected override async Task OnPlay(PlayerChoiceContext context, CardPlay play)
     {
         await PowerCmd.Apply<IntangiblePower>(context, Owner.Creature,
