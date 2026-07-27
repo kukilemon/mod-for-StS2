@@ -12,8 +12,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- Decompiled game scripts copied by initialize-dev.ps1 are editor-only. -->
+    <Compile Remove="addons/**/*.cs" />
+    <Compile Remove="src/Core/**/*.cs" />
     <Compile Remove=".godot/**/*.cs" />
     <Compile Remove="obj/**/*.cs" />
+    <None Remove="addons/**/*.cs" />
+    <None Remove="src/Core/**/*.cs" />
     <None Remove=".godot/**/*" />
     <None Remove="obj/**/*" />
   </ItemGroup>
